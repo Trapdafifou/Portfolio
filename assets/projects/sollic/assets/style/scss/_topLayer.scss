@@ -1,0 +1,53 @@
+.top-layer {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  img {
+    width: 1400px;
+    height: 600px;
+  }
+  .layer-content {
+    position: absolute;
+    left: 10%;
+    top: 0;
+    h5 {
+      color: #FFFFFF;
+      z-index: 1;
+      font-size: em(65px);
+      text-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+      line-height: em(18px);
+
+      small {
+        font-weight: 100;
+      }
+    }
+    button {
+      z-index: 1;
+      bottom: em(20px);
+      font-size: 14px;
+      font-weight: 500;
+
+      background-color: #fff;
+      overflow: hidden;
+      display: inline-block;
+      color: transparent;
+      border-radius: 180px;
+      padding: 10px 60px;
+      border: none;
+
+      span {
+        background: url('../../img/eiffel-tower.png') repeat;
+        color: rgba(0, 0, 0, 0);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        display: block;
+      }
+    }
+    button:active {
+      background: #c5c5c5;
+    }
+    button:focus {
+      outline: none;
+    }
+  }
+}

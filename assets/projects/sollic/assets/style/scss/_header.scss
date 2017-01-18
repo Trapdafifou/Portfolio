@@ -1,0 +1,41 @@
+header {
+  padding:30px 10px 30px 30px;
+  nav {
+    text-align: right;
+    ul{
+      li{
+        display: inline-block;
+        margin:10px 0 0 40px;
+
+        input{
+          display: none;
+        }
+        a{
+          text-decoration: none;
+          font-size: 16px;
+          color: #1c1c1d;
+          transition-duration: 0.5s;
+        }
+        a:hover{
+          color: #000000;
+          text-decoration: none;
+        }
+        a:focus{
+          text-decoration: none;
+          color: #000000;
+        }
+      }
+    }
+  }
+  .logo {
+
+    h4{
+      font-size: 12px;
+      font-weight: lighter;
+      color: #777777;
+    }
+  }
+  .menu-burger{
+    display: none;
+  }
+}

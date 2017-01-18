@@ -1,0 +1,25 @@
+//HEADER
+
+@function em($actualSize){
+  @return ($actualSize/16px) * 1em;
+}
+
+@import '_header.scss';
+@import '_navHover.scss';
+@import '_topLayer.scss';
+@import '_article.scss';
+@import '_footer.scss';
+@import '_responsive.scss';
+
+
+body {
+  font-family: Roboto;
+  background: #ededed;
+
+  .inner-body {
+    width: 90%;
+    background: #FFFFFF;
+    margin:0 auto;
+    overflow: hidden;
+  }
+}

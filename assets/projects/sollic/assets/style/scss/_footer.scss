@@ -1,0 +1,43 @@
+footer {
+  background: #1c1c1d;
+  color: #FFFFFF;
+  display: block;
+  margin:20px auto 0 auto;
+  padding: 20px;
+  width:100%;
+  font-weight:lighter;
+
+  .footer-logo{
+    font-weight:lighter;
+    text-align: center;
+    margin:50px 0 0 40px;
+
+    h4{
+      font-weight: 100;
+      font-size: em(12px);
+    }
+  }
+  .footer-list{
+    h6{
+      font-size: em(14px);
+      text-transform: uppercase;
+    }
+    ul{
+
+      li{
+        font-size: em(11px);
+        list-style: none;
+      }
+    }
+  }
+  span{
+    display: block;
+    width:100%;
+    height:1px;
+    background: #6c6c6c;
+    margin:10px;
+  }
+  small {
+    margin: 0 0 20px 0;
+  }
+}

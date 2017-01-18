@@ -1,0 +1,246 @@
+header {
+  padding: 30px 10px 30px 30px; }
+  header nav {
+    text-align: right; }
+    header nav ul li {
+      display: inline-block;
+      margin: 10px 0 0 40px; }
+      header nav ul li input {
+        display: none; }
+      header nav ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #1c1c1d;
+        transition-duration: 0.5s; }
+      header nav ul li a:hover {
+        color: #000000;
+        text-decoration: none; }
+      header nav ul li a:focus {
+        text-decoration: none;
+        color: #000000; }
+  header .logo h4 {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #777777; }
+  header .menu-burger {
+    display: none; }
+
+.not-hovered {
+  opacity: 0.4; }
+
+.top-layer {
+  position: relative;
+  height: 600px;
+  overflow: hidden; }
+  .top-layer img {
+    width: 1400px;
+    height: 600px; }
+  .top-layer .layer-content {
+    position: absolute;
+    left: 10%;
+    top: 0; }
+    .top-layer .layer-content h5 {
+      color: #FFFFFF;
+      z-index: 1;
+      font-size: 4.0625em;
+      text-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+      line-height: 1.125em; }
+      .top-layer .layer-content h5 small {
+        font-weight: 100; }
+    .top-layer .layer-content button {
+      z-index: 1;
+      bottom: 1.25em;
+      font-size: 14px;
+      font-weight: 500;
+      background-color: #fff;
+      overflow: hidden;
+      display: inline-block;
+      color: transparent;
+      border-radius: 180px;
+      padding: 10px 60px;
+      border: none; }
+      .top-layer .layer-content button span {
+        background: url("../../img/eiffel-tower.png") repeat;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        display: block; }
+    .top-layer .layer-content button:active {
+      background: #c5c5c5; }
+    .top-layer .layer-content button:focus {
+      outline: none; }
+
+.col-md-5 {
+  clear: both;
+  float: none; }
+
+.top-article {
+  margin-top: -75px;
+  height: auto; }
+  .top-article img {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 50%; }
+
+.mid-container {
+  width: 100%; }
+  .mid-container article {
+    display: inline-block; }
+    .mid-container article img {
+      width: 100%; }
+    .mid-container article .text-content {
+      width: 100%;
+      display: inline-block;
+      vertical-align: bottom;
+      line-height: 1.2; }
+      .mid-container article .text-content h2 {
+        margin: 0; }
+      .mid-container article .text-content span {
+        font-size: 0.6875em;
+        font-weight: bold; }
+      .mid-container article .text-content small {
+        color: #1c1c1d;
+        font-size: 0.6875em;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin: 0 0 20px 0; }
+      .mid-container article .text-content .underline {
+        display: block;
+        height: 1px;
+        width: 100%;
+        background: #e3e3e4;
+        margin: 20px 0 0 0; }
+      .mid-container article .text-content .arrow {
+        float: right;
+        margin-top: 50px;
+        width: 1.5625em; }
+      .mid-container article .text-content p {
+        color: #5e5e5e;
+        font-size: 0.875em; }
+
+.bot-container .text-content {
+  width: 100%; }
+.bot-container img {
+  width: 100%; }
+
+.text-content {
+  width: 49%;
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 1.2; }
+  .text-content img {
+    width: 100%; }
+  .text-content h2 {
+    margin: 0; }
+  .text-content span {
+    font-size: 0.6875em;
+    font-weight: bold; }
+  .text-content small {
+    color: #1c1c1d;
+    font-size: 0.6875em;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0 0 20px 0; }
+  .text-content .underline {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #e3e3e4;
+    margin: 20px 0 0 0; }
+  .text-content .arrow {
+    float: right;
+    margin-top: 25px;
+    width: 1.5625em; }
+  .text-content p {
+    color: #5e5e5e;
+    font-size: 0.875em; }
+
+article {
+  margin: 30px 0 0 0; }
+
+footer {
+  background: #1c1c1d;
+  color: #FFFFFF;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  width: 100%;
+  font-weight: lighter; }
+  footer .footer-logo {
+    font-weight: lighter;
+    text-align: center;
+    margin: 50px 0 0 40px; }
+    footer .footer-logo h4 {
+      font-weight: 100;
+      font-size: 0.75em; }
+  footer .footer-list h6 {
+    font-size: 0.875em;
+    text-transform: uppercase; }
+  footer .footer-list ul li {
+    font-size: 0.6875em;
+    list-style: none; }
+  footer span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #6c6c6c;
+    margin: 10px; }
+  footer small {
+    margin: 0 0 20px 0; }
+
+@media (max-width: 770px) {
+  header .menu-burger {
+    display: block;
+    margin-top: 10px; }
+    header .menu-burger .bar {
+      width: 15px;
+      height: 3px;
+      background: #1c1c1d; }
+    header .menu-burger .bar:hover {
+      cursor: pointer; }
+    header .menu-burger #bar1 {
+      padding: 2px;
+      margin: 2px; }
+    header .menu-burger #bar2 {
+      padding: 2px;
+      margin: 2px; }
+    header .menu-burger #bar3 {
+      padding: 2px;
+      margin: 2px; }
+  header nav ul li {
+    display: none; }
+  header nav ul li:last-child {
+    display: block; }
+
+  .top-article {
+    margin-top: 20px;
+    display: block; }
+    .top-article img {
+      width: 100%; }
+    .top-article .text-content {
+      width: 100%; } }
+.active-burger {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0; }
+
+.active-research-bar {
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #1c1c1d; }
+
+.active-research-bar:focus {
+  outline-color: transparent;
+  outline-style: none; }
+
+body {
+  font-family: Roboto;
+  background: #ededed; }
+  body .inner-body {
+    width: 90%;
+    background: #FFFFFF;
+    margin: 0 auto;
+    overflow: hidden; }
+
+/*# sourceMappingURL=style.css.map */
