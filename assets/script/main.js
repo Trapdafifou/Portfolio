@@ -9,8 +9,8 @@ var Projects = function (mainColor, bgColor, fontColor) {
 
 //trouver un moyen de stocker proprement des instances de Projects pour chaque projet.
 var main = new Projects('#4B5F64', '#6d8186', '#FFFFFF'),
-    atbgo = new Projects('#ff4b2e', '#f7f4ed', '#f7f4ed'),
-    md = new Projects('#252525', '#e5e3e1', '#e5e3e1'),
+    atbgo = new Projects('#ff4b2e', '#e5e3e1', '#f7f4ed'),
+    md = new Projects('#3ca968', '#e5e3e1', '#FFFFFF'),
     sollic = new Projects('#ffffff', '#000000', '#000000');
 
 var projectsTab = [atbgo, md, sollic];
@@ -82,31 +82,32 @@ $('.image-holder').on('click', function () {
 Mail = function (email, content) {
     this.email = email;
     this.content = content;
-}
+};
 
 function sendMail () {
+    var mailContent = new Mail($('#e-mail').val(), $('#message').val());
+    console.log(mailContent);
+    if (mailContent) {
+        $.ajax({
+            type: "POST",
+            url: "./mail.php",
+            data: mailContent,
+            success: function (response) {
+                console.log(this.data);
+                console.log(response);
+            },
+            error: function (response) {
+                console.log('ca marche pas ' + response)
+            }
+        })
+    }else{
+        alert('veuillez remplir les champs')
+    }
 }
 
-$('.submit').on('click', function(){
-    var mailContent = new Mail($('#e-mail').val(), $('#message').val());
-    var toSend = JSON.stringify(mailContent);
+// $('.button .submit').on('click', sendMail());
 
-    $.ajax({
-        type : "POST",
-        url : "./mail.php",
-        data : toSend,
-        success : function (response) {
-            console.log(this.data);
-            console.log(response);
-        },
-        error : function (response) {
-            console.log('ca marche pas ' + response)
-        }
-    })
-});
-
-
-//Blank tab
+//NEW tab
 
 var newTab = document.querySelectorAll('a');
 

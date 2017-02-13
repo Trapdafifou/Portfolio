@@ -10,7 +10,7 @@ div, section {
 }
 
 body {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 
@@ -120,9 +120,9 @@ body {
 
 .board {
   margin-left: 400px;
-  width: 300%;
+  width: 400vw;
   .story {
-    margin: 7% 0;
+    margin: 37vh 0;
     width: 10%;
     height: 700px;
     float: left;
@@ -140,7 +140,8 @@ body {
     float: left;
     display: inline-block;
     vertical-align: top;
-    margin: 7% 15%;
+    width: 90vw;
+    margin: 35vh 15%;
     padding: 0 5%;
     ul {
       li {
@@ -208,16 +209,15 @@ body {
       display: block;
     }
     label {
-
+      margin-bottom: 20px;
     }
     input {
       position: relative;
-      left: 200px;
+      left: 25vw;
       display: block;
-
     }
     #message {
-      width: 500px;
+      width: 60vw;
       height: 400px;
       display: block;
       transition-duration: 0.2s;
@@ -340,15 +340,53 @@ body {
 
 @media (max-width: 650px) {
 
+  body {
+    overflow: inherit;
+  }
+
   .sidebar {
     width: 100%;
     display: block;
     position: relative;
   }
-  .project-holder {
-    display: block;
-    width: 100%;
-    margin: 20px auto;
+  .board {
+    width: 100vw;
+    margin: 20px;
+
+    .story {
+      display: block;
+      width: 80vw;
+      height:300px;
+      padding: 20px;
+    }
+    .project-holder {
+      display: block;
+      width: 100%;
+      margin: 0 0 37% 0;
+      padding: 0;
+      height:300px;
+    }
+    .contact-section {
+      display: block;
+      padding: 0;
+      width: 100%;
+
+      input, textarea{
+        border: 1px solid #333333;
+      }
+      input {
+        left:40vw;
+      }
+      #message {
+        width:99vw;
+      }
+    }
+    .next-arrow {
+      display: none;
+    }
+    .previous-arrow {
+      display: none;
+    }
   }
 }
 
