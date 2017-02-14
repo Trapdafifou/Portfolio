@@ -256,12 +256,10 @@ body {
 @media (max-width: 650px) {
   body {
     overflow: inherit; }
-
   .sidebar {
     width: 100%;
     display: block;
     position: relative; }
-
   .board {
     width: 100vw;
     margin: 20px; }
@@ -290,5 +288,3 @@ body {
       display: none; }
     .board .previous-arrow {
       display: none; } }
-
-/*# sourceMappingURL=style.css.map */
